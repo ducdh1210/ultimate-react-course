@@ -143,70 +143,70 @@ function getBook(id) {
   return data.find((d) => d.id === id);
 }
 
-// Destructuring
+// // Destructuring
 
-/*
-const book = getBook(3);
-book;
 
-// const title = book.title;
-// const author = book.author;
+// const book = getBook(2);
+// book;
 
-const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
-  book;
+// // const title = book.title;
+// // const author = book.author;
 
-console.log(author, title, genres);
+// const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
+//   book;
 
-// const primaryGenre = genres[0];
-// const secondaryGenre = genres[1];
+// console.log(author, title, genres, pages);
 
-const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
-console.log(primaryGenre, secondaryGenre, otherGenres);
+// // const primaryGenre = genres[0];
+// // const secondaryGenre = genres[1];
 
-const newGenres = ["epic fantasy", ...genres];
-newGenres;
+// const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
+// console.log(primaryGenre, secondaryGenre, otherGenres);
 
-const updatedBook = {
-  ...book,
-  // Adding a new property
-  moviePublicationDate: "2001-12-19",
+// const newGenres = ["epic fantasy", ...genres];
+// newGenres;
 
-  // Overwriting an existing property
-  pages: 1210,
-};
-updatedBook;
+// const updatedBook = {
+//   ...book,
+//   // Adding a new property
+//   moviePublicationDate: "2001-12-19",
 
-// function getYear(str) {
-//   return str.split("-")[0];
-// }
+//   // Overwriting an existing property
+//   pages: 1210,
+// };
+// updatedBook;
 
-const getYear = (str) => str.split("-")[0];
-console.log(getYear(publicationDate));
+// // function getYear(str) {
+// //   return str.split("-")[0];
+// // }
 
-const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${getYear(
-  publicationDate
-)}. The book has ${hasMovieAdaptation ? "" : "not"} been adapted as a movie`;
-summary;
+// const getYear = (str) => str.split("-")[0];
+// console.log(getYear(publicationDate));
 
-const pagesRange = pages > 1000 ? "over a thousand" : "less than 1000";
-pagesRange;
-console.log(`The book has ${pagesRange} pages`);
+// const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${getYear(
+//   publicationDate
+// )}. The book has ${hasMovieAdaptation ? "" : "not"} been adapted as a movie`;
+// summary;
 
-console.log(true && "Some string");
-console.log(false && "Some string");
-console.log(hasMovieAdaptation && "This book has a movie");
+// const pagesRange = pages > 1000 ? "over a thousand" : "less than 1000";
+// pagesRange;
+// console.log(`The book has ${pagesRange} pages`);
 
-// falsy: 0, '', null, undefined
-console.log("jonas" && "Some string");
-console.log(0 && "Some string");
+// console.log(true && "Some string");
+// console.log(false && "Some string");
+// console.log(hasMovieAdaptation && "This book has a movie");
 
-console.log(true || "Some string");
-console.log(false || "Some string");
+// // falsy: 0, '', null, undefined
+// console.log("jonas" && "Some string");
+// console.log(0 && "Some string");
 
-console.log(book.translations.spanish);
+// console.log(true || "Some string");
+// console.log(false || "Some string");
 
-const spanishTranslation = book.translations.spanish || "NOT TRANSLATED";
-spanishTranslation;
+// console.log(book.translations.spanish);
+
+// const spanishTranslation = book.translations.spanish || "NOT TRANSLATED";
+// spanishTranslation;
 
 // console.log(book.reviews.librarything.reviewsCount);
 // const countWrong = book.reviews.librarything.reviewsCount || "no data";
@@ -215,17 +215,17 @@ spanishTranslation;
 // const count = book.reviews.librarything.reviewsCount ?? "no data";
 // count;
 
-function getTotalReviewCount(book) {
-  const goodreads = book.reviews?.goodreads?.reviewsCount;
-  const librarything = book.reviews?.librarything?.reviewsCount ?? 0;
-  librarything;
-  return goodreads + librarything;
-}
+// function getTotalReviewCount(book) {
+//   const goodreads = book.reviews?.goodreads?.reviewsCount;
+//   const librarything = book.reviews?.librarything?.reviewsCount ?? 0;
+//   librarything;
+//   return goodreads + librarything;
+// }
 
-console.log(getTotalReviewCount(book));
-*/
+// console.log(getTotalReviewCount(book));
 
-/*
+
+
 function getTotalReviewCount(book) {
   const goodreads = book.reviews?.goodreads?.reviewsCount;
   const librarything = book.reviews?.librarything?.reviewsCount ?? 0;
@@ -288,7 +288,7 @@ const booksAfterUpdate = booksAfterDelete.map((book) =>
   book.id === 1 ? { ...book, pages: 1210 } : book
 );
 booksAfterUpdate;
-*/
+
 
 // fetch("https://jsonplaceholder.typicode.com/todos")
 //   .then((res) => res.json())
