@@ -1,16 +1,14 @@
 {
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "eslint.format.enable": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.arrowParens": "avoid",
+  "emmet.triggerExpansionOnTab": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay"
-  //   "emmet.includeLanguages": {
-  //     "javascript": "javascriptreact"
-  //   },
-  //   "emmet.syntaxProfiles": {
-  //     "javascript": "jsx"
-  //   },
-  //   "files.associations": {
-  //     "*.react.js": "javascriptreact",
-  //     "*.jsx": "javascriptreact",
-  //     "*.js": "javascriptreact"
-  //   }
+  "editor.formatOnPaste": true,
+  "emmet.useInlineCompletions": true
 }
